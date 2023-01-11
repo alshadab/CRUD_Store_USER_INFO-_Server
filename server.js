@@ -7,10 +7,10 @@ const StudentReg = require("./Routers/StudentReg");
 
 app.use(express.json());
 app.use(cors());
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 app.use("/student", StudentReg);
 
-app.listen(port, (res, req) => {
-  console.log(`Listening on ${port}`);
+app.listen(PORT, (res, req) => {
+  console.log(`Listening on ${PORT}`);
 });
